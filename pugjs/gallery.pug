@@ -1,0 +1,29 @@
+extends index.pug
+
+block head
+    +head("Beshoy Samy / Gallery")
+block landing
+    .landing_two 
+        .container
+            div Gallery
+            div 
+                a(href="index.html") Home / 
+                a(href="gallery.html") Gallery
+block certificate
+    div
+block projects
+    div
+block competitions
+    div
+block addGallery
+    .galleryJS
+    script.
+        let gallery = document.querySelector(".galleryJS");
+        for (let i = 18; i > 0; i--) {
+            let img = document.createElement("img");
+            img.src = `imgs/gallery-${i}.jpg`;
+            gallery.append(img);
+            img.className = `img-${i} imgs`;
+        }
+block contact
+    div
