@@ -19,6 +19,7 @@ html(lang="en")
                             #menubar 
                                 span: a(href="projects.html") Projects
                                 span: a(href="competitions.html") Competitions
+                                span: a(href="research.html") Research
                                 span: a(href="gallery.html") Gallery
                         span: a(href="index.html#contact-form") Contact
                     .sidenav#sidenav 
@@ -33,6 +34,7 @@ html(lang="en")
                             a(href="certificates.html") Certificates
                             a(href="projects.html") Projects
                             a(href="competitions.html") Competitions
+                            a(href="research.html") Research
                             a(href="gallery.html") Gallery
                             a(href="index.html#contact-form") Contact
                     .boxThree
@@ -91,6 +93,17 @@ html(lang="en")
                             img(src="imgs/4.jpg", alt="Website")
                             div ISEF National Fair
                         block addCompetitions
+        block research
+            section.research
+                .container
+                    .title
+                        div Research
+                        a(href="research.html") More Research
+                    .boxs
+                        .box: a(href="documents/bumpsDetector.pdf", target="_blank") 
+                            iframe(src="documents/bumpsDetector.pdf", frameborder="0")
+                            div Bumps Detector Full Abstract
+                        block addResearch
         block Gallery
             section.gallery
                     .container
