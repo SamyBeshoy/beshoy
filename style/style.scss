@@ -1,0 +1,41 @@
+// import global file
+@use "global" as *; 
+
+// import variables file
+@use "variables" as *; 
+
+// import header file
+@use "header" as *; 
+
+// import landing file
+@use "landing" as *; 
+
+// import certificate file
+@use "certificate" as *; 
+
+// import projects file
+@use "projects" as *; 
+
+// import competitions file
+@use "competitions" as *;
+
+// import research file
+@use "research" as *;
+
+// import gallery file
+@use "gallery" as *;
+
+// import contact file
+@use "contact" as *; 
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: $font_six;
+    span {
+        color: $main_color;
+        font-style: italic;
+    }
+}
