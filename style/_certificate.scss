@@ -1,0 +1,33 @@
+// import variables file
+@use "variables" as *;
+.certificate {
+    .container {
+        .boxs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            .box { 
+                border: 1px solid #ccc;
+                transition: 0.5s;
+                &:hover {
+                    border: 1px solid #777;
+                    transform: translatey(-5px);
+                }
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: $font_six;
+                    img {
+                        width: 25em;
+                    }
+                    div {
+                        text-align: center;
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}

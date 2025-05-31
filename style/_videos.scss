@@ -1,0 +1,47 @@
+// import variables file
+@use "variables" as *; 
+.videos {
+    .container {
+        .boxs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            .box {
+                iframe {
+                    width: 31.25em;
+                    height: 17.563em;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .videos {
+        .container {
+            .boxs {
+                .box {
+                    iframe {
+                        width: 28.125em;
+                        height: 15.813em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .videos {
+        .container {
+            .boxs {
+                .box {
+                    iframe {
+                        width: 25em;
+                        height: 14.063em;
+                    }
+                }
+            }
+        }
+    }
+}
