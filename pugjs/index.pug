@@ -1,0 +1,158 @@
+include mixin.pug
+doctypehtml
+html(lang="en")
+    block head
+        head
+            +head("Beshoy Samy")
+    body
+        block header
+            header
+                .container 
+                    .logo
+                        a(href="index.html") Beshoy
+                    nav
+                        span: a(href="index.html") Home
+                        span: a(href="index.html") About
+                        span: a(href="certificates.html") Certificates
+                        span.page#pageMenu
+                            a(href="#page") Pages 
+                            #menubar 
+                                span: a(href="projects.html") Projects
+                                span: a(href="competitions.html") Competitions
+                                span: a(href="videos.html") Videos
+                                span: a(href="research.html") Research
+                                span: a(href="book.html") Books
+                                span: a(href="gallery.html") Gallery
+                        span: a(href="index.html#contact-form") Contact
+                    .sidenav#sidenav 
+                        div.parent 
+                            div.ch1
+                                span: a(href="index.html") Beshoy
+                            div.ch2    
+                                a(href="##" class="closebtn" onclick="closeNav()") &times;
+                        div
+                            a(href="index.html") Home
+                            a(href="index.html") About
+                            a(href="certificates.html") Certificates
+                            a(href="projects.html") Projects
+                            a(href="competitions.html") Competitions
+                            a(href="videos.html") Videos
+                            a(href="research.html") Research
+                            a(href="book.html") Books
+                            a(href="gallery.html") Gallery
+                            a(href="index.html#contact-form") Contact
+                    .boxThree
+                        <span onclick="openNav()"class="tog"><i class="fa-solid fa-bars"></i></span> 
+        block landing
+            .landing
+                .boxOne
+                    div Hi, I'm Beshoy 
+                    <div class="animated-text"> I'm a <span></span></div>
+                    div  
+                        a(href="https://www.linkedin.com/in/beshoy-englizy/", target="_blank") <i class="fa-brands fa-linkedin-in"></i>
+                        a(href="https://github.com/SamyBeshoy", target="_blank") <i class="fa-brands fa-github"></i>
+                        a(href="https://www.instagram.com/beshoy_samy40/", target="_blank") <i class="fa-brands fa-instagram"></i>
+                        a(href="https://www.youtube.com/@beshoy-samy", target="_blank") <i class="fa-brands fa-youtube"></i> 
+                .boxTwo
+                    img(src="imgs/personal.jpg", alt="My photo")
+        block certificate
+            section.certificate
+                .container
+                    .title
+                        div Certificates
+                        a(href="certificates.html") More Certificates
+                    .boxs
+                        .box: a(href="imgs/38.jpg", target="_blank") 
+                            img(src="imgs/38.jpg", alt="Certificate")
+                            div CLF Senior Fellow
+                        .box: a(href="imgs/2.jpg", target="_blank") 
+                            img(src="imgs/2.jpg", alt="Certificate")
+                            div The Experiment Digital Leadership in STEM
+                        block addCertificate
+        block projects
+            section.projects
+                .container
+                    .title
+                        div Projects
+                        a(href="projects.html") More Projects
+                    .boxs
+                        .box: a(href="https://samybeshoy.github.io/Zoofari/", target="_blank") 
+                            img(src="imgs/zoofari.png", alt="Website")
+                            div Zoofari Template (Programming)
+                        .box: a(href="https://samybeshoy.github.io/Milky/", target="_blank") 
+                            img(src="imgs/milky.png", alt="Website")
+                            div Milky Template (Programming)
+                        block addProjects
+        block competitions
+            section.competitions
+                .container
+                    .title
+                        div Competitions
+                        a(href="competitions.html") More Competitions
+                    .boxs
+                        .box: a(href="imgs/34.jpg", target="_blank") 
+                            img(src="imgs/34.jpg", alt="Website")
+                            div ISEF National Fair
+                        .box: a(href="imgs/4.jpg", target="_blank") 
+                            img(src="imgs/4.jpg", alt="Website")
+                            div ISEF National Fair
+                        block addCompetitions
+        block video
+            section.videos
+                .container
+                    .title
+                        div Videos
+                        a(href="videos.html") More Videos
+                    .boxs
+                        .box
+                            <iframe src="https://www.youtube.com/embed/lInYT-PgOWo?si=5dwI5x5avLkN394k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        .box
+                            <iframe src="https://www.youtube.com/embed/2zUEHbGkaT0?si=NEq7fCLNteFmOjSK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        block addVideo
+        block research
+            section.research
+                .container
+                    .title
+                        div Research
+                        a(href="research.html") More Research
+                    .boxs
+                        .box: a(href="documents/bumpsDetector.pdf", target="_blank") 
+                            iframe(src="documents/bumpsDetector.pdf", frameborder="0")
+                            div Bumps Detector Full Abstract
+                        .box: a(href="documents/Abstract.pdf", target="_blank") 
+                            iframe(src="documents/Abstract.pdf", frameborder="0")
+                            div Denmark & Slavery Full Abstract
+                        block addResearch
+        block book 
+            section.book
+                .container
+                    .title
+                        div Books
+                        a(href="book.html") My Books
+                    .boxs 
+                        .box: a(href="documents/askBeshoy.pdf", target="_blank") 
+                            iframe(src="documents/askBeshoy.pdf", frameborder="0")
+                            div Ask Beshoy: What Is Climate Change
+                        block addBook
+        block Gallery
+            section.gallery
+                    .container
+                        .title
+                            div Gallery
+                            a(href="gallery.html") More Photos
+                        .box
+                            .imgs
+                                img(src="imgs/personal.jpg", alt="beshoy")
+                                img(src="imgs/35.jpg", alt="beshoy")
+                                img(src="imgs/36.jpg", alt="beshoy")
+                                block addGallery
+        block contact
+            section.contact#contact-form
+                .container
+                    .title
+                        div Contact
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfn6WP82YV_plYcRqrjvml9YzwFwqO1XD0bZu-SQ8FpJQvsMQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        block footer
+            footer#date
+        block scripts 
+            script(src="main.js")
